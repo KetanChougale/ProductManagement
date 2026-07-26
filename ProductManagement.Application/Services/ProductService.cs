@@ -30,6 +30,7 @@ public class ProductService : IProductService
         {
             Id = product.Id,
             Name = product.Name,
+            Category = product.Category,
             Price = product.Price,
             StockQuantity = product.StockQuantity,
             IsActive = product.IsActive,
@@ -45,6 +46,7 @@ public class ProductService : IProductService
         var product = new Product
         {
             Name = request.Name,
+            Category = request.Category,
             Price = request.Price,
             StockQuantity = request.StockQuantity,
             IsActive = true,
@@ -60,6 +62,7 @@ public class ProductService : IProductService
         {
             Id = createdProduct.Id,
             Name = createdProduct.Name,
+            Category = createdProduct.Category,
             Price = createdProduct.Price,
             StockQuantity = createdProduct.StockQuantity,
             IsActive = createdProduct.IsActive,
@@ -82,6 +85,7 @@ public class ProductService : IProductService
         }
 
         product.Name = request.Name;
+        product.Category = request.Category;
         product.Price = request.Price;
         product.StockQuantity = request.StockQuantity;
 
@@ -94,6 +98,7 @@ public class ProductService : IProductService
         {
             Id = updatedProduct.Id,
             Name = updatedProduct.Name,
+            Category = updatedProduct.Category,
             Price = updatedProduct.Price,
             StockQuantity = updatedProduct.StockQuantity,
             IsActive = updatedProduct.IsActive,
